@@ -1,0 +1,16 @@
+{
+  "name": "ddos-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "build:pkg": "pkg --out-path build/ index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.26.0"
+  }
+}
