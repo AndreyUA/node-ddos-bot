@@ -31,7 +31,6 @@ const linksArray = [
   "http://www.interfax.ru/",
   "http://www.kommersant.ru/",
   "http://www.vesti.ru/",
-  "https://tvrain.ru/",
   "https://ria.ru/",
   "https://rg.ru/",
   "http://izvestia.ru/",
@@ -189,6 +188,7 @@ const linksArray = [
   "https://zakupki.gov.ru/",
   "https://zdrav.khv.gov.ru/",
   "https://мвд.рф/",
+  "http://admin.gazprombank.ru",
 ];
 
 module.exports = linksArray;
