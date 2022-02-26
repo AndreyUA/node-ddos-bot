@@ -1,4 +1,5 @@
 const linksArray = [
+  "https://vk.com/",
   "https://www.gosuslugi.ru/",
   "https://www.sberbank.ru/",
   "https://epp.genproc.gov.ru",
