@@ -17,6 +17,10 @@ const linksArray = [
   "https://www.rt.com/",
   "https://smotrim.ru/",
   "https://vgtrk.ru/",
+  "http://council.gov.ru/",
+  "http://duma.gov.ru/",
+  "https://gossluzhba.gov.ru/",
+  "https://zakupki.gov.ru",
 ];
 
 module.exports = linksArray;
