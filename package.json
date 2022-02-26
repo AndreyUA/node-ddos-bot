@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node .",
+    "start": "node --max-old-space-size=4096 --max-semi-space-size=256 --optimize-for-size .",
     "build:pkg": "pkg --out-path build/ index.js"
   },
   "keywords": [],

@@ -6,14 +6,15 @@ const linksArray = require("./utils/linksArray");
 let startTime = new Date();
 
 const executeRequest = (url) => {
-  setInterval(async () => {
+  const interval = setInterval(async () => {
     try {
-      const response = await axios.get(url);
+      await axios.get(url);
 
       console.log(
-        `Success req to ${url}. Status: ${
-          response.status
-        }. ${calculateRunningTime(startTime, new Date())}`
+        `Success req to ${url}. Status: SUCCESS. ${calculateRunningTime(
+          startTime,
+          new Date()
+        )}`
       );
     } catch (error) {
       console.log(
@@ -22,8 +23,14 @@ const executeRequest = (url) => {
           new Date()
         )}`
       );
+
+      console.log("REQUEST TERMINATED!!!");
+
+      stopInterval();
     }
-  }, 50);
+  }, 10000);
+
+  const stopInterval = () => clearInterval(interval);
 };
 
 linksArray.forEach((link) => executeRequest(link));
