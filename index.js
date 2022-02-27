@@ -6,7 +6,9 @@ const linksArray = require("./utils/linksArray");
 let startTime = new Date();
 
 const executeRequest = (url) => {
-  const interval = setInterval(async () => {
+  const interval = setInterval(executeInterval, 1000);
+
+  async function executeInterval() {
     try {
       await axios.get(url);
 
@@ -24,13 +26,9 @@ const executeRequest = (url) => {
         )}`
       );
 
-      console.log("REQUEST TERMINATED!!!");
-
-      stopInterval();
+      clearInterval(interval);
     }
-  }, 10000);
-
-  const stopInterval = () => clearInterval(interval);
+  }
 };
 
 linksArray.forEach((link) => executeRequest(link));
