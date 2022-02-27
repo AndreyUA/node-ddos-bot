@@ -6,7 +6,7 @@ const linksArray = require("./utils/linksArray");
 let startTime = new Date();
 
 const executeRequest = (url) => {
-  const interval = setInterval(executeInterval, 1000);
+  setInterval(executeInterval, 600);
 
   async function executeInterval() {
     try {
@@ -25,8 +25,6 @@ const executeRequest = (url) => {
           new Date()
         )}`
       );
-
-      clearInterval(interval);
     }
   }
 };
