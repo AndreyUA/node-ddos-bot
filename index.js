@@ -4,11 +4,10 @@ const calculateRunningTime = require("./utils/calculateRunningTime");
 const linksArray = require("./utils/linksArray");
 
 let startTime = new Date();
+const delay = 10;
 
-const executeRequest = (url) => {
-  setInterval(executeInterval, 1000);
-
-  async function executeInterval() {
+const executeRequest = async (url) => {
+  while (true) {
     try {
       await axios.get(url);
 
@@ -26,6 +25,8 @@ const executeRequest = (url) => {
         )}`
       );
     }
+
+    await new Promise((req) => setInterval(req, delay));
   }
 };
 
