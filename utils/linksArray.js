@@ -192,6 +192,7 @@
 // ];
 
 const linksArray = [
+  "https://yandex.by/",
   "https://vk.com/",
   "https://ok.ru/",
   "https://lenta.ru/",
@@ -283,6 +284,14 @@ const linksArray = [
   "https://customs.gov.ru/",
   "https://pfr.gov.ru/",
   "https://rkn.gov.ru/",
+  "http://lenta.ru/",
+  "http://lenta.ru/",
+  "http://lenta.ru/",
+  "http://lenta.ru/",
+  "https://www.tinkoff.ru/",
+  "https://www.tinkoff.ru/",
+  "https://www.tinkoff.ru/",
 ];
 
-module.exports = Array.from(new Set(linksArray));
+// module.exports = Array.from(new Set(linksArray));
+module.exports = linksArray;
